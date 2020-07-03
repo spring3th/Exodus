@@ -18,7 +18,7 @@ def main():
     Script for checking all plots in the plots.yaml file. Specify a number of challenge to test for each plot.
     """
 
-    parser = argparse.ArgumentParser(description="Chia plot checking script.")
+    parser = argparse.ArgumentParser(description="Exodus plot checking script.")
     parser.add_argument(
         "-n", "--num", help="Number of challenges", type=int, default=100
     )

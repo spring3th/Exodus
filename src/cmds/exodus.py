@@ -20,8 +20,8 @@ SUBCOMMANDS = [
 
 def create_parser() -> ArgumentParser:
     parser: ArgumentParser = ArgumentParser(
-        description="Manage chia blockchain infrastructure (%s)." % __version__,
-        epilog="Try 'chia start node', 'chia netspace -d 48', or 'chia show -s'.",
+        description="Manage exodus blockchain infrastructure (%s)." % __version__,
+        epilog="Try 'exodus start node', 'exodus netspace -d 48', or 'exodus show -s'.",
     )
 
     parser.add_argument(
@@ -47,14 +47,14 @@ def create_parser() -> ArgumentParser:
     return parser
 
 
-def chia(args: Namespace, parser: ArgumentParser):
+def exodus(args: Namespace, parser: ArgumentParser):
     return args.function(args, parser)
 
 
 def main():
     parser = create_parser()
     args = parser.parse_args()
-    return chia(args, parser)
+    return exodus(args, parser)
 
 
 if __name__ == "__main__":

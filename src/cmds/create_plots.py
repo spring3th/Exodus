@@ -28,7 +28,7 @@ def main():
     root_path = DEFAULT_ROOT_PATH
     plot_config_filename = config_path_for_filename(root_path, "plots.yaml")
 
-    parser = argparse.ArgumentParser(description="Chia plotting script.")
+    parser = argparse.ArgumentParser(description="Exodus plotting script.")
     parser.add_argument("-k", "--size", help="Plot size", type=int, default=26)
     parser.add_argument(
         "-n", "--num_plots", help="Number of plots", type=int, default=1

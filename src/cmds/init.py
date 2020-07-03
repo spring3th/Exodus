@@ -46,7 +46,7 @@ def check_keys(new_root):
     all_pubkeys = keychain.get_all_public_keys()
     if len(all_pubkeys) == 0:
         print(
-            "No keys are present in the keychain. Generate them with 'chia keys generate'"
+            "No keys are present in the keychain. Generate them with 'exodus keys generate'"
         )
         return
     all_targets = [
@@ -200,14 +200,14 @@ def initialize_ssl(root_path: Path):
 
 
 def init(args: Namespace, parser: ArgumentParser):
-    return chia_init(args.root_path)
+    return exodus_init(args.root_path)
 
 
-def chia_init(root_path: Path):
+def exodus_init(root_path: Path):
     if os.environ.get("CHIA_ROOT", None) is not None:
         print(
-            f"warning, your CHIA_ROOT is set to {os.environ['CHIA_ROOT']}. "
-            f"Please unset the environment variable and run chia init again\n"
+            f"warning, your EXODUS_ROOT is set to {os.environ['EXODUS_ROOT']}. "
+            f"Please unset the environment variable and run exodus init again\n"
             f"or manually migrate config.yaml, plots.yaml and keys.yaml."
         )
 
@@ -253,7 +253,7 @@ def chia_init(root_path: Path):
         initialize_ssl(root_path)
         check_keys(root_path)
         print("")
-        print("To see your keys, run 'chia keys show'")
-        print("Please generate your keys with 'chia keys generate.'")
+        print("To see your keys, run 'exodus keys show'")
+        print("Please generate your keys with 'exodus keys generate.'")
 
     return 0
