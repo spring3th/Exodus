@@ -20,7 +20,7 @@ dependencies = [
     "keyring==21.2.1",
     "keyring_jeepney==0.2",
     "keyrings.cryptfile==1.3.4",
-    "cryptography==2.9.2", #Python cryptography library for TLS
+    "cryptography==3.2", #Python cryptography library for TLS
 ]
 
 upnp_dependencies = [
