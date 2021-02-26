@@ -8,7 +8,7 @@ dependencies = [
     "clvm==0.4",  # contract language
     "PyYAML==5.3.1",  # Used for config file format
     "aiosqlite==0.13.0",  # asyncio wrapper for sqlite, to store blocks
-    "aiohttp==3.6.2",  # HTTP server for full node rpc
+    "aiohttp==3.7.4",  # HTTP server for full node rpc
     "colorlog==4.1.0",  # Adds color to logs
     "chiavdf==0.12.16",  # timelord and vdf verification
     "chiabip158==0.14",  # bip158-style wallet filters
