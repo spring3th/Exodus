@@ -6,7 +6,7 @@ dependencies = [
     "blspy==0.1.27",  # Signature library
     "cbor2==5.1.0",  # Used for network wire format
     "clvm==0.4",  # contract language
-    "PyYAML==5.3.1",  # Used for config file format
+    "PyYAML==5.4",  # Used for config file format
     "aiosqlite==0.13.0",  # asyncio wrapper for sqlite, to store blocks
     "aiohttp==3.6.2",  # HTTP server for full node rpc
     "colorlog==4.1.0",  # Adds color to logs
