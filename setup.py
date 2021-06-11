@@ -14,7 +14,7 @@ dependencies = [
     "chiabip158==0.14",  # bip158-style wallet filters
     "chiapos==0.12.21",  # proof of space
     "sortedcontainers==2.1.0",  # For maintaining sorted mempools
-    "websockets==8.1.0",  # For use in wallet RPC and electron UI
+    "websockets==9.1",  # For use in wallet RPC and electron UI
     "clvm-tools==0.1.1",  # clvm compiler tools
     "bitstring==3.1.6",
     "keyring==21.2.1",
